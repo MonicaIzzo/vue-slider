@@ -7,7 +7,7 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Monica Izzo">
-    <title>Esercitazione JS Carosello Mono Array </title>
+    <title>Esercitazione JS Carosello Vue JS </title>
     
 <!-- icon-->
     <link rel="icon" type="image/png" sizes="32x32" href="img/faicon.png">
@@ -25,20 +25,31 @@
 </head>
     <body>
 <!-- HERO -->
-<div class="container p-0">
+<div class="container p-0" id="root">
     <div id="carousel">
 <!-- controls next -->
 <i class="fa-solid fa-circle-arrow-down" id="next"></i>
 <!-- Carousel -->
         <div class="gallery">
+            <img src="img/01.webp" alt="title" class="active">
+            <img src="img/02.webp" alt="title" class="active">
+            <img src="img/03.webp" alt="title" class="active">
+            <img src="img/04.webp" alt="title" class="active">
+            <img src="img/05.webp" alt="title" class="active">
         </div>
 <!-- controls next-->
 <i class="fa-solid fa-circle-arrow-up" id="prev"></i>
 <!-- thumbnails -->
-        <div id="thumbnails"></div>
+        <div id="thumbnails">
+            <img src="img/01.webp" alt="title">
+            <img src="img/02.webp" alt="title">
+            <img src="img/03.webp" alt="title">
+            <img src="img/04.webp" alt="title">
+            <img src="img/05.webp" alt="title">
+        </div>
     </div>
 </div>
 <!-- script javascript -->
-        <script src="js/script.js"></script>
+        <!-- <script src="js/script.js"></script>-->
     </body>
 </html>
