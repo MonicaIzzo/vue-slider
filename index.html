@@ -28,18 +28,24 @@
 <body>
     <!-- HERO -->
     <div class="container p-0">
-        <div id="carousel" class="debug">
+        <div id="carousel">
             <!-- controls next -->
-            <i class="fa-solid fa-circle-arrow-down" id="next"></i>
+            <i class="fa-solid fa-circle-arrow-down" id="next" @click="goToNext" v-show="!isLastPicture"></i>
             <!-- Carousel -->
-            <div class="gallery debug">
-                <img :src="pictures[1]" alt="images 1" class="active">
+            <div class="gallery">
+                <figure v-for="(pic, i) in pictures" v-show="currentIndex === i">
+                <img :src="pic.image" :alt="pic.text" title="pic.title">
+                <figcaption>
+                    <h2>{{pic.title}}</h2>
+                    <p>{{pic.text}}</p>
+                </figcaption>
+                </figure>
             </div>
-            <!-- controls next-->
-            <i class="fa-solid fa-circle-arrow-up" id="prev"></i>
+            <!-- controls prev-->
+            <i class="fa-solid fa-circle-arrow-up" id="prev" @click="goToPrev" v-show="currentIndex"></i>
             <!-- thumbnails -->
-            <div id="thumbnails" class="debug">
-                <img v-for="pic in pictures" :src="pic.image" alt="images 1" class="">
+            <div id="thumbnails">
+                <img v-for="(pic, i) in pictures" :src="pic.image" :alt="pic.text" title="pic.title" :class="{active: currentIndex === i}" @click="setCurrentIndex(i)" @mouseenter="stopAutoPlay" @mouseleave="startAutoPlay" >
             </div>
         </div>
     </div>

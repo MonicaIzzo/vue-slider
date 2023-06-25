@@ -45,6 +45,7 @@ console.log('Vue OK, Vue');
         name: 'Carousel',
         data() {
             return {
+                autoPlay: null,
                 currentIndex: 0,
                 pictures: [
     {
@@ -71,8 +72,39 @@ console.log('Vue OK, Vue');
 ]
             }
         },
+        computed:{
+            isLastPicture () {
+                return this.currentIndex === this.pictures.length - 1
+            }
+        },
+        methods: {
+            goToNext() {
+                if (this.isLastPicture) {
+                   this.currentIndex = 0; 
+                } else {
+                    this.currentIndex++;
+                }
+            },
+            goToPrev() {
+                if (this.currentIndex) {
+                   this.currentIndex--; 
+                } else {
+                    this.currentIndex = this.pictures.length - 1;
+                }   
+            },
+            setCurrentIndex(targetIndex) {
+                this.currentIndex = targetIndex;
+            },
+            stopAutoPlay() {
+                clearInterval(this.autoPlay);
+            },
+            startAutoPlay() {
+                this.autoPlay = setInterval(this.goToNext, 3000)
+            },
+        },
+        mounted () {
+           this.startAutoPlay();
+        }
     });    
-
-
     //La monto nell'elemento HTML "radice"
     app.mount('#carousel');

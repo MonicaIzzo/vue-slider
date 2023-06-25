@@ -42,15 +42,26 @@
     position: relative;
 }
 
+#carousel .gallery figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#carousel .gallery figcaption {
+    position: absolute;
+    bottom: 6px;
+    left: 20px;
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+    width: 600px;
+}
+
 #carousel .gallery img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: none;
-}
-
-#carousel .gallery img.active {
-    display: block;
 }
 
 /* thumbnails */
