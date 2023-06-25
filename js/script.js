@@ -40,7 +40,6 @@ console.log('Vue OK, Vue');
         },
     });  
 */
-
     const app = Vue.createApp({
         name: 'Carousel',
         data() {
