@@ -8,7 +8,7 @@
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Monica Izzo">
-    <title>Esercitazione JS Hello Vue</title>
+    <title>Esercitazione Vue JS SLIDER</title>
 
     <!-- icon-->
     <link rel="icon" type="image/png" sizes="32x32" href="img/faicon.png">
@@ -26,10 +26,21 @@
 </head>
 
 <body>
-    <div class="container text-center mx-auto pt-5">
-        <div id="root">
-            <h1>{{ message }}</h1>
-            <img :src="imgVueJs" alt="VueJs">
+    <!-- HERO -->
+    <div class="container p-0">
+        <div id="carousel" class="debug">
+            <!-- controls next -->
+            <i class="fa-solid fa-circle-arrow-down" id="next"></i>
+            <!-- Carousel -->
+            <div class="gallery debug">
+                <img :src="pictures[1]" alt="images 1" class="active">
+            </div>
+            <!-- controls next-->
+            <i class="fa-solid fa-circle-arrow-up" id="prev"></i>
+            <!-- thumbnails -->
+            <div id="thumbnails" class="debug">
+                <img :src="pictures[1]" alt="images 1" class="active">
+            </div>
         </div>
     </div>
 

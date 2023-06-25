@@ -5,15 +5,13 @@
 
 /* Reset CSS */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-} 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Custom PROPERTIES */
-:root {
-    
-}
+:root {}
 
 /* Generics */
 
@@ -38,11 +36,11 @@ box-sizing: border-box;
 }
 
 .gallery {
-        height: 500px;
-        width: 100%;
-        margin: 30px auto;
-        position: relative;
-    }
+    height: 500px;
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+}
 
 #carousel .gallery img {
     width: 100%;
@@ -83,11 +81,11 @@ box-sizing: border-box;
 
 /* controlli */
 .fa-solid {
- font-size: 30px;
- color: white;
- opacity: 0.7;
- cursor: pointer;
- z-index: 1;
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .fa-solid:hover {

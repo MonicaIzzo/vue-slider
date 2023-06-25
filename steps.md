@@ -17,9 +17,9 @@ il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'es
 - **0**
   - Ricreo il template statico della pagina
 - **1**
-  - Mi riporto l'arrey di oggetto sotto data
+  - Svuoto il template
 - **2**
-  - 
+  - Mi riporto l'arrey di oggetto sotto data
 - **3**
   - 
   **4**
