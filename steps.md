@@ -10,20 +10,3 @@ Bonus:
 Consigli del giorno:
 regola d'oro: riciclare ovunque possibile! Se stiamo ripetendo della logica possiamo aiutarci sicuramente centralizzando il codice!
 il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'esercizio si riduce a poche righe.
-
-<br>
-<br>
-
-- **0**
-  - Ricreo il template statico della pagina
-- **1**
-  - Svuoto il template
-- **2**
-  - Mi riporto l'arrey di oggetto sotto data
-- **3**
-  - 
-  **4**
-  - 
- **5**
-  - 
-**FINE**  
