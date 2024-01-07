@@ -31,11 +31,11 @@
       <i class="fa-solid fa-circle-arrow-down" id="next" @click="goToNext"></i>
       <!-- Carousel -->
       <div class="gallery">
-        <figure>
-          <img :src="currentImage.image" :alt="currentImage.text" title="currentImage.title" />
+        <figure v-for="(pic, i) in pictures" v-show="currentIndex === i">
+          <img :src="pic.image" :alt="pic.text" title="pic.title" />
           <figcaption>
-            <h2>{{currentImage.title}}</h2>
-            <p>{{currentImage.text}}</p>
+            <h2>{{pic.title}}</h2>
+            <p>{{pic.text}}</p>
           </figcaption>
         </figure>
       </div>

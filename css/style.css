@@ -114,3 +114,15 @@
   right: 125px;
   transform: translate(50%, -50%);
 }
+
+.btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.btn-toolbar {
+  justify-content: center;
+}
